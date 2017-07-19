@@ -33,7 +33,14 @@ Although you can use them, for a more unique website, replace these images with 
 <script>
 	var doCxCheck = function(e){
 		console.log("I'm doing the CX check now");
-		console.log(e);
+		
+		var form_name = document.getElementById('form_name').value;
+		var form_email = document.getElementById('form_email').value;
+		
+		console.log(form_name);
+		console.log(form_email);
+		
+		//do something else with the name and email here...
 	}
 </script>
 	
