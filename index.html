@@ -28,6 +28,15 @@ Although you can use them, for a more unique website, replace these images with 
 
     <!-- Custom Fonts from Google -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>  
+
+	
+<script>
+	var doCxCheck = function(e){
+		console.log("I'm doing the CX check now");
+		console.log(e);
+	}
+</script>
+	
 </head>
 
 <body>
@@ -163,14 +172,13 @@ Although you can use them, for a more unique website, replace these images with 
 	<!-- Content 3 -->
      <section class="content content-3">
         <div class="container">
-			<h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Sanity Check</h2>
-			<p class="lead text-muted">Are you still reading this?</p> 
-                    <a href="#" class="btn btn-primary btn-lg">Check Now</a>   
-<form action="javascript:alert('Hello there, I am being submitted');">
-  <p>First name:
-	  <input type="text" name="firstname" value="Mickey"></p>
-  <p>Last name:
-	  <input type="text" name="lastname" value="Mouse"></p>
+			<h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Customer Experience Check</h2>
+			<p class="lead text-muted">What's your CX score?</p>   
+<form action="javascript:doCxCheck();">
+  <p>Name:
+	  <input type="text" name="name" value="Mickey"></p>
+  <p>Email:
+	  <input type="text" name="email" value="Mouse"></p>
   <input class="btn btn-primary btn-lg" type="submit" value="Check Now">
 </form>		
 		
